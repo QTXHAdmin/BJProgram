@@ -1,34 +1,41 @@
 # BJProgram
+
 使用github的fork工作流开发BJ项目
 
 ## Project setup
-```
-npm install
+
+```sh
+$ npm install
 ```
 
 ### Compiles and hot-reloads for development
-```
-npm run serve
+
+```sh
+$ npm run serve
 ```
 
 ### Compiles and minifies for production
-```
-npm run build
+
+```sj
+$ npm run build
 ```
 
 ### Run your tests
-```
-npm run test
+
+```sh
+$ npm run test
 ```
 
 ### Lints and fixes files
-```
-npm run lint
+
+```sh
+$ npm run lint
 ```
 
 ### Run your unit tests
-```
-npm run test:unit
+
+```sh
+$ npm run test:unit
 ```
 
 ### Customize configuration
