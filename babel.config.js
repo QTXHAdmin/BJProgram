@@ -1,5 +1,4 @@
 module.exports = {
-<<<<<<< HEAD
     presets: ["@vue/app"],
     plugins: [
         [
@@ -12,7 +11,3 @@ module.exports = {
         ]
     ]
 };
-=======
-  presets: ["@vue/app"]
-};
->>>>>>> first commit
