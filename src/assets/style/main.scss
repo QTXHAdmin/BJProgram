@@ -1,3 +1,6 @@
 @import "../../lib/hotcss/px2rem";
 $border-radius:50%;
 $th:px2rem(120); //顶部的高度
+
+$iconsize: px2rem(48); //设置图标字体大小
+$btn-head-fontsize: px2rem(36); //按钮标题的字体大小
