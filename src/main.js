@@ -12,8 +12,13 @@ import MintUI from 'mint-ui';
 import 'mint-ui/lib/style.css';
 import "./assets/font/iconfont.css"; //font字体图标样式
 // import Mock from "mockjs";
+import VeeValidate from "vee-validate";
+
+
+Vue.use(VeeValidate);
+
+
 Vue.use(MintUI);
-//使用格式化日期插件格式化事件
 Vue.filter('dateFormat', function(dataStr, pattern = "YYYY/MM/DD HH:mm:ss") {
     return moment(dataStr).format(pattern);
 });
