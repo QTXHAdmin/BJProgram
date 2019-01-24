@@ -53,5 +53,14 @@
             "order_time": "2015-04-16T03:50:28.000Z",
             "address": "乌鲁木齐大西桥超市"
         }]
+    },
+    "login": {
+        "code": 1,
+        "msg": "请求成功",
+        "message": [{
+            "bianhao": "12",
+            "gongsibianhao": "888",
+            "pwd": "12345"
+        }]
     }
 }
