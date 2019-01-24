@@ -13,7 +13,7 @@
             <p class="order-address">{{item.address}}</p>
           </div>
           <div class="shoplist-item-r">
-            <span class="iconfont icon-iconfontjiantou5"></span>
+            <span class="iconfont icon-fenye-xiayiye"></span>
           </div>
         </li>
       </ul>
@@ -83,7 +83,7 @@ export default {
       }
       .shoplist-item-r {
         line-height: px2rem(95);
-        .icon-iconfontjiantou5 {
+        .icon-fenye-xiayiye {
           &:before {
             font-size: px2rem(36);
           }

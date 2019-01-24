@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <span class="iconfont  icon-fangdajing"></span>
+    <span class="iconfont  icon-sousuo"></span>
     <input type="text" class="search-text" :placeholder="orderoutsidesearch">
   </div>
 </template>
@@ -17,7 +17,7 @@ export default {
 <style lang="scss" scoped>
 .search {
   position: relative;
-  .icon-fangdajing {
+  .icon-sousuo {
     position: absolute;
     top: px2rem(37);
     left: px2rem(27);
