@@ -18,12 +18,6 @@ export default {
   name: "outsideOfOrder",
   data() {
     return {
-      // order: {
-      //   listTile: '超市',
-      //   listDate: '下单日期：1992-02-01',
-      //   listAddress: '超市',
-      //   url: ''
-      // },
       orderlist: [
         {
           listTile: '超市',
