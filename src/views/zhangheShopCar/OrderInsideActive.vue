@@ -43,7 +43,6 @@ export default {
   }
   .shop-wrap {
     .count {
-      
     }
     .shopname {
       height: px2rem(84);
