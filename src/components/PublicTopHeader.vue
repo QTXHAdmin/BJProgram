@@ -77,10 +77,14 @@ $headColor: linear-gradient(to right, #24be5a, #29db67); //头部渐变色
     //定义插槽注意：用flex布局，那么左右两侧的插槽要固定好相等的宽度，不然中间文字不居中！或者用双飞翼圣杯浮动布局
     .top-l,
     .top-r {
-      width: $iconsize;
+      width: px2rem(100);
       height: $height;
     }
+    .top-r {
+      text-align: right;
+    }
     .top-l {
+      text-align: left;
       .icon-jiantoushang {
         // display: inline-block;
         // height: $height;
