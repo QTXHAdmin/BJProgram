@@ -1,19 +1,19 @@
 <template>
   <div class="publictextarea">
     <div class="history-remark">历史拜访备注：</div>
-    <textarea name="" id="" class="remark" :placeholder="insedetitle"></textarea>
+    <textarea name="" id="" class="remark" :placeholder="orderinsidetext"></textarea>
   </div>
 </template>
 <script>
 export default {
-  name: "publictextarea",
+  name: 'publictextarea',
   data() {
     return {
       placeholder: ''
-    }
+    };
   },
-  props: ['insedetitle']
-}
+  props: ['orderinsidetext']
+};
 </script>
 <style lang="scss" scoped>
 .history-remark {
@@ -35,5 +35,3 @@ export default {
   text-indent: px2rem(28);
 }
 </style>
-
-

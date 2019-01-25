@@ -9,10 +9,10 @@ export default {
   data() {
     return {
       placeholder: ''
-    }
+    };
   },
   props: ['orderoutsidesearch']
-}
+};
 </script>
 <style lang="scss" scoped>
 .search {
@@ -36,4 +36,3 @@ export default {
   }
 }
 </style>
-

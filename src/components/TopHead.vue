@@ -10,19 +10,17 @@
 
 <script>
 export default {
-  name: "tophead",
-  props: ["title", "backurl"],
+  name: 'tophead',
+  props: ['title', 'backurl'],
   data() {
-    return {}
+    return {};
   },
   methods: {
     BackToPage() {
       this.$router.go(-1);
     }
   }
-
-
-}
+};
 </script>
 
 <style lang="scss" scoped>

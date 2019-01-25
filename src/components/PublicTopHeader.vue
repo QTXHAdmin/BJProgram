@@ -23,14 +23,14 @@
 </template>
 <script>
 export default {
-  name: "topheader",
+  name: 'topheader',
   data() {
     return {
       //定义一个开关用来判断后退按钮该不该显示
       flag: true
-    }
+    };
   },
-  // title：头部的标题  
+  // title：头部的标题
   props: { title: { type: String, required: true } },
   created() {
     //判断刷新页面的时候是不是登录页面，如果是后退按钮就不显示，不是就显示
@@ -48,7 +48,7 @@ export default {
   },
   watch: {
     //利用监听事件，监听路径，如果退到了登录页面，那么后退按钮就不显示
-    '$route.path': function (newVal) {
+    '$route.path': function(newVal) {
       if (newVal === '/login') {
         this.flag = false;
       } else {
@@ -56,7 +56,7 @@ export default {
       }
     }
   }
-}
+};
 </script>
 <style lang="scss" scoped>
 $height: px2rem(100);
@@ -103,6 +103,3 @@ $headColor: linear-gradient(to right, #24be5a, #29db67); //头部渐变色
   }
 }
 </style>
-
-
-

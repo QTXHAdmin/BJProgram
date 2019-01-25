@@ -8,14 +8,14 @@
 
 <script>
 // 引入 ECharts 主模块
-import echarts from "echarts/lib/echarts";
+import echarts from 'echarts/lib/echarts';
 // 引入柱状图
-import "echarts/lib/chart/pie";
+import 'echarts/lib/chart/pie';
 // 引入提示框和标题组件
-import "echarts/lib/component/tooltip";
-import "echarts/lib/component/title";
+import 'echarts/lib/component/tooltip';
+import 'echarts/lib/component/title';
 export default {
-  name: "myprogress",
+  name: 'myprogress',
   props: {
     title: { type: String, required: true },
     val: { type: Number, required: true },
@@ -31,38 +31,38 @@ export default {
     initCircle() {
       let data = [];
       if (this.percent) {
-        data.push({ value: this.val, name: "" });
-        data.push({ value: 100 - this.val, name: "" });
+        data.push({ value: this.val, name: '' });
+        data.push({ value: 100 - this.val, name: '' });
       } else {
-        data.push({ value: 0, name: "" });
-        data.push({ value: 100, name: "" });
+        data.push({ value: 0, name: '' });
+        data.push({ value: 100, name: '' });
       }
       //基于准备好的dom,初始化echarts实例
       let myChart = echarts.init(this.$refs.pie);
-      console.log("开始绘制图表");
+      console.log('开始绘制图表');
       //绘制图表
       myChart.setOption({
-        color: ["rgb(102,208,113)", "rgb(223,223,223)"],
+        color: ['rgb(102,208,113)', 'rgb(223,223,223)'],
         series: [
           {
             name: this.title,
-            type: "pie",
-            radius: ["95%", "100%"],
+            type: 'pie',
+            radius: ['95%', '100%'],
             avoidLabelOverlap: false,
             label: {
               normal: {
                 show: true,
-                position: "center",
+                position: 'center',
                 textStyle: {
-                  fontSize: "48",
-                  fontWeight: "bold"
+                  fontSize: '48',
+                  fontWeight: 'bold'
                 }
               },
               emphasis: {
                 show: true,
                 textStyle: {
-                  fontSize: "30",
-                  fontWeight: "bold"
+                  fontSize: '30',
+                  fontWeight: 'bold'
                 }
               }
             },
@@ -77,9 +77,7 @@ export default {
       });
     }
   }
-
-
-}
+};
 </script>
 
 <style lang="scss" scoped>
