@@ -12,21 +12,19 @@
 
 <script>
 export default {
-  name: "outsideoderlist",
-  props: ["title", "date", "address", "url"],
+  name: 'outsideoderlist',
+  props: ['title', 'date', 'address', 'url'],
   data() {
     return {
-      // url: 
-    }
+      // url:
+    };
   },
   methods: {
     GetToOrderPage() {
       this.router.push('/order');
     }
-
   }
-
-}
+};
 </script>
 
 <style lang="scss" scoped>

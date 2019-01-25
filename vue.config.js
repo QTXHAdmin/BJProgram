@@ -14,7 +14,7 @@ module.exports = {
     proxy: {
       // proxy all requests starting with /api to jsonplaceholder
       '/api': {
-        // target: "http://localhost:3000", //代理接口
+        target: 'http://localhost:3000', //代理接口
         //target: apiPort,
         // target: "http://35.185.177.218:52020",
         changeOrigin: true,

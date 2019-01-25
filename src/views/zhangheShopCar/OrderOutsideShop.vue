@@ -12,7 +12,7 @@
             <p class="order-date">下单日期：{{item.order_time | dateFormat}}</p>
             <p class="order-address">{{item.address}}</p>
           </div>
-          <div class="shoplist-item-r">
+          <div class="shoplist-item-r" @click="toorderinsideactive(item.id)">
             <span class="iconfont icon-fenye-xiayiye"></span>
           </div>
         </li>
@@ -21,10 +21,10 @@
   </div>
 </template>
 <script>
-import PublicTopHeader from "../../components/PublicTopHeader";
-import Search from "../../components/zhangheShopCarcomponent/Search";
-import service from "../../service/service.js";
-import { Toast } from "mint-ui";
+import PublicTopHeader from '../../components/PublicTopHeader';
+import Search from '../../components/zhangheShopCarcomponent/Search';
+import service from '../../service/service.js';
+import { Toast } from 'mint-ui';
 export default {
   name: 'orderoutsideshop',
   data() {
@@ -32,33 +32,32 @@ export default {
       orderoutsidetitle: '店外订单',
       shopname: '门店名称编码检索~',
       orderoutsidesearch: '',
-      shopnamelist: []//获取所有商店的数据
-    }
+      shopnamelist: [] //获取所有商店的数据
+    };
   },
   created() {
     this.getShopInfo();
   },
   methods: {
     getShopInfo() {
-      service.getshopinfo()
+      service
+        .getshopinfo()
         .then(res => {
-          if (res.data.code === 1) {
-            this.shopnamelist = res.data.message;
-            Toast('获取成功');
-          } else {
-            Toast('获取失败');
-          }
+          this.shopnamelist = res.data;
         })
         .catch(e => {
-          Toast('获取异常');
-        })
+          Toast(e);
+        });
+    },
+    toorderinsideactive(id) {
+      this.$router.push('/home/orderinsideactive?id=' + id);
     }
   },
   components: {
     PublicTopHeader,
     Search
   }
-}
+};
 </script>
 <style lang="scss" scoped>
 .orderoutsideshop {
@@ -93,5 +92,3 @@ export default {
   }
 }
 </style>
-
-

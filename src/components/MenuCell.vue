@@ -10,13 +10,12 @@
 
 <script>
 export default {
-  name: "menu-cell",
-  props: ["menuName", "imgUrl", "url"],
+  name: 'menu-cell',
+  props: ['menuName', 'imgUrl', 'url'],
   data() {
     return {};
   }
-
-}
+};
 </script>
 
 <style lang="scss" scoped>

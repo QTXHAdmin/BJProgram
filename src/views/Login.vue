@@ -125,6 +125,7 @@ export default {
                   //把当前登录的用户信息放到vueX
                   this.$store.commit('initUser', res.data.user);
                   //跳转到home页面
+                  Indicator.close();
                   this.$router.push('/home');
                   console.log('登录成功');
                 } else {

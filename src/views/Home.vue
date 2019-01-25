@@ -30,68 +30,66 @@ import MenuCell from '../components/MenuCell.vue';
 
 const menuList = [
   {
-    menuName: "公司通告",
-    imgUrl: require("@/assets/img/ggtz.png"),
-    url: "/notice"
+    menuName: 'zh购物车',
+    imgUrl: require('@/assets/img/ggtz.png'),
+    url: '/home/orderoutsideshop'
   },
   {
-    menuName: "进店拜访",
-    imgUrl: require("@/assets/img/jdbf.png"),
-    url: "/visitshop"
+    menuName: '进店拜访',
+    imgUrl: require('@/assets/img/jdbf.png'),
+    url: '/visitshop'
   },
   {
-    menuName: "电话订单",
-    imgUrl: require("@/assets/img/dhdd.png"),
-    url: "/phoneorder"
+    menuName: '电话订单',
+    imgUrl: require('@/assets/img/dhdd.png'),
+    url: '/phoneorder'
   },
   {
-    menuName: "订单状态",
-    imgUrl: require("@/assets/img/ddzt.png"),
-    url: "/orders"
+    menuName: '订单状态',
+    imgUrl: require('@/assets/img/ddzt.png'),
+    url: '/orders'
   },
   {
-    menuName: "培训资料",
-    imgUrl: require("@/assets/img/pxzl.png"),
-    url: "/training"
+    menuName: '培训资料',
+    imgUrl: require('@/assets/img/pxzl.png'),
+    url: '/training'
   },
   {
-    menuName: "消息中心",
-    imgUrl: require("@/assets/img/xxzx.png"),
-    url: "/message"
+    menuName: '消息中心',
+    imgUrl: require('@/assets/img/xxzx.png'),
+    url: '/message'
   },
   {
-    menuName: "新增门店",
-    imgUrl: require("@/assets/img/xzmd.png"),
-    url: "/addedshop"
+    menuName: '新增门店',
+    imgUrl: require('@/assets/img/xzmd.png'),
+    url: '/addedshop'
   },
   {
-    menuName: "同步数据",
-    imgUrl: require("@/assets/img/sjtb.png"),
-    url: "/asyncdata"
+    menuName: '同步数据',
+    imgUrl: require('@/assets/img/sjtb.png'),
+    url: '/asyncdata'
   },
   {
-    menuName: "电话订单(zzz)",
-    imgUrl: require("@/assets/img/dhdd.png"),
-    url: "/out"
-  },
+    menuName: '电话订单(zzz)',
+    imgUrl: require('@/assets/img/dhdd.png'),
+    url: '/out'
+  }
 ];
 export default {
-  name: "home",
+  name: 'home',
   data() {
     return {
       mounthSealsPercent: 0,
       shops: 0,
       menuList
-    }
+    };
   },
   components: {
     tophead: TopHead,
     mp: Progress,
     menuCell: MenuCell
   },
-  methods: {
-
-  },
+  methods: {},
   computed: {
     getYearMonth() {
       let t = new Date();

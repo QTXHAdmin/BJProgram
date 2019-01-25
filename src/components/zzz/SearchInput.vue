@@ -12,18 +12,15 @@ export default {
   name: 'searchInput',
   data() {
     return {
-      searchValue: '',
-    }
-
+      searchValue: ''
+    };
   },
   methods: {
     Search() {
-      this.$emit("SearchOutSideOrder", this.searchValue);
+      this.$emit('SearchOutSideOrder', this.searchValue);
     }
   }
-
-
-}
+};
 </script>
 
 <style lang="scss" scoped>

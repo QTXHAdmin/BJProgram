@@ -1,69 +1,65 @@
 {
-    "shop": {
-        "code": 1,
-        "msg": "请求成功",
-        "message": [{
-                "id": 1,
-                "name": "文悦超市1",
-                "order_time": "2015-04-16T03:50:28.000Z",
-                "address": "乌鲁木齐大西桥超市"
-            },
-            {
-                "id": 2,
-                "name": "文悦超市2",
-                "order_time": "2015-04-16T03:50:28.000Z",
-                "address": "乌鲁木齐大西桥超市"
-            },
-            {
-                "id": 3,
-                "name": "文悦超市3",
-                "order_time": "2015-04-16T03:50:28.000Z",
-                "address": "乌鲁木齐大西桥超市"
-            },
-            {
-                "id": 4,
-                "name": "文悦超市4",
-                "order_time": "2015-04-16T03:50:28.000Z",
-                "address": "乌鲁木齐大西桥超市"
-            },
-            {
-                "id": 5,
-                "name": "文悦超市5",
-                "order_time": "2015-04-16T03:50:28.000Z",
-                "address": "乌鲁木齐大西桥超市"
-            },
-            {
-                "id": 6,
-                "name": "文悦超市6",
-                "order_time": "2015-04-16T03:50:28.000Z",
-                "address": "乌鲁木齐大西桥超市"
-            },
-            {
-                "id": 7,
-                "name": "文悦超市7",
-                "order_time": "2015-04-16T03:50:28.000Z",
-                "address": "乌鲁木齐大西桥超市"
-            },
-            {
-                "id": 8,
-                "name": "文悦超市8",
-                "order_time": "2015-04-16T03:50:28.000Z",
-                "address": "乌鲁木齐大西桥超市"
-            },
-            {
-                "id": 9,
-                "name": "文悦超市9",
-                "order_time": "2015-04-16T03:50:28.000Z",
-                "address": "乌鲁木齐大西桥超市"
-            },
-            {
-                "id": 10,
-                "name": "文悦超市10",
-                "order_time": "2015-04-16T03:50:28.000Z",
-                "address": "乌鲁木齐大西桥超市"
-            }
-        ]
-    },
+    "shopinfo": [{
+            "id": 1,
+            "name": "文悦超市1",
+            "order_time": "2015-04-16T03:50:28.000Z",
+            "address": "乌鲁木齐大西桥超市"
+        },
+        {
+            "id": 2,
+            "name": "文悦超市2",
+            "order_time": "2015-04-16T03:50:28.000Z",
+            "address": "乌鲁木齐大西桥超市"
+        },
+        {
+            "id": 3,
+            "name": "文悦超市3",
+            "order_time": "2015-04-16T03:50:28.000Z",
+            "address": "乌鲁木齐大西桥超市"
+        },
+        {
+            "id": 4,
+            "name": "文悦超市4",
+            "order_time": "2015-04-16T03:50:28.000Z",
+            "address": "乌鲁木齐大西桥超市"
+        },
+        {
+            "id": 5,
+            "name": "文悦超市5",
+            "order_time": "2015-04-16T03:50:28.000Z",
+            "address": "乌鲁木齐大西桥超市"
+        },
+        {
+            "id": 6,
+            "name": "文悦超市6",
+            "order_time": "2015-04-16T03:50:28.000Z",
+            "address": "乌鲁木齐大西桥超市"
+        },
+        {
+            "id": 7,
+            "name": "文悦超市7",
+            "order_time": "2015-04-16T03:50:28.000Z",
+            "address": "乌鲁木齐大西桥超市"
+        },
+        {
+            "id": 8,
+            "name": "文悦超市8",
+            "order_time": "2015-04-16T03:50:28.000Z",
+            "address": "乌鲁木齐大西桥超市"
+        },
+        {
+            "id": 9,
+            "name": "文悦超市9",
+            "order_time": "2015-04-16T03:50:28.000Z",
+            "address": "乌鲁木齐大西桥超市"
+        },
+        {
+            "id": 10,
+            "name": "文悦超市10",
+            "order_time": "2015-04-16T03:50:28.000Z",
+            "address": "乌鲁木齐大西桥超市"
+        }
+    ],
     "login": {
         "code": 1,
         "msg": "登录成功"
@@ -71,5 +67,67 @@
     "code": {
         "code": 1,
         "msg": "验证成功"
-    }
+    },
+    "orderinsideactive": [{
+        "id": 1,
+        "title": "文悦超市1",
+        "monthsalesvalumns": 23198,
+        "halfyearmonthvalumns": 56660,
+        "compelationrate": 50
+    }, {
+        "id": 2,
+        "title": "文悦超市1",
+        "monthsalesvalumns": 23198,
+        "halfyearmonthvalumns": 56660,
+        "compelationrate": 20
+    }, {
+        "id": 3,
+        "title": "文悦超市1",
+        "monthsalesvalumns": 23198,
+        "halfyearmonthvalumns": 56660,
+        "compelationrate": 20
+    }, {
+        "id": 4,
+        "title": "文悦超市1",
+        "monthsalesvalumns": 23198,
+        "halfyearmonthvalumns": 56660,
+        "compelationrate": 20
+    }, {
+        "id": 5,
+        "title": "文悦超市1",
+        "monthsalesvalumns": 23198,
+        "halfyearmonthvalumns": 56660,
+        "compelationrate": 20
+    }, {
+        "id": 6,
+        "title": "文悦超市1",
+        "monthsalesvalumns": 23198,
+        "halfyearmonthvalumns": 56660,
+        "compelationrate": 20
+    }, {
+        "id": 7,
+        "title": "文悦超市1",
+        "monthsalesvalumns": 23198,
+        "halfyearmonthvalumns": 56660,
+        "compelationrate": 20
+    }, {
+        "id": 8,
+        "title": "文悦超市1",
+        "monthsalesvalumns": 23198,
+        "halfyearmonthvalumns": 56660,
+        "compelationrate": 20
+    }, {
+        "id": 9,
+        "title": "文悦超市1",
+        "monthsalesvalumns": 23198,
+        "halfyearmonthvalumns": 56660,
+        "compelationrate": 20
+    }, {
+        "id": 10,
+        "title": "文悦超市1",
+        "monthsalesvalumns": 23198,
+        "halfyearmonthvalumns": 56660,
+        "compelationrate": 20
+    }]
+
 }
