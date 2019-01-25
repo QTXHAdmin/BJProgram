@@ -9,6 +9,11 @@ import OrderOutsideShop from './views/zhangheShopCar/OrderOutsideShop.vue';
 import OrderInsideActive from './views/zhangheShopCar/OrderInsideActive.vue';
 import PlaceOrder from './views/zhangheShopCar/PlaceOrder.vue';
 
+import InStoreActivity from './views/zzz/InStoreActivity';
+
+// import OrderOutsideShop from './views/zhangheShopCar/OrderOutsideShop.vue';
+// import OrderInsideActive from './views/zhangheShopCar/OrderInsideActive.vue';
+
 Vue.use(Router);
 
 export default new Router({
@@ -42,6 +47,11 @@ export default new Router({
       path: '/home/placeorder',
       name: 'placeorder',
       component: PlaceOrder
+    },
+    {
+      path: '/home/instoreactivity',
+      name: 'inStoreActivity',
+      component: InStoreActivity
     },
     {
       path: '/about',

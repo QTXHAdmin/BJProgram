@@ -2,7 +2,7 @@
   <div class="outsideoderlist">
     <div class="list-l">
       <p class="list-title">{{title}}</p>
-      <p class="list-date">{{date}}</p>
+      <p class="list-date">下单日期：{{date}}</p>
       <p class="list-address">{{address}}</p>
     </div>
     <div class="list-r" @click="GetToOrderPage(url)"><i class="icon iconfont icon-fenye-xiayiye"></i></div>
@@ -19,9 +19,10 @@ export default {
       // url:
     };
   },
+  // '/home/instoreactivity?id=' + url
   methods: {
-    GetToOrderPage() {
-      this.router.push('/order');
+    GetToOrderPage(url) {
+      this.$router.push('/home/instoreactivity?id=' + url);
     }
   }
 };
