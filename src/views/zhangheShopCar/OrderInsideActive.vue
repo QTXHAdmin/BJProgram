@@ -1,23 +1,23 @@
 <template>
   <div class="orderinsideactive">
     <PublicTopHeader :title="orderinsidetitle">
-      <span slot="top-r" class="end-visit">结束拜访</span>
+      <span slot="top-r" class="end-visit" @click="goBack">结束拜访</span>
     </PublicTopHeader>
     <div class="shop-wrap">
       <div class="shopname">{{infolist.title}}</div>
       <div class="shop-sales">
-        <span>3</span>
+        <span class="iconfont icon-xiaoliangzuigao"></span>
         <div class="shop-sales-title">本月至今销量</div>
         <div class="count">{{infolist.monthsalesvalumns}}</div>
       </div>
       <div class="average-sales">
-        <span>1</span>
+        <span class="iconfont icon-xiaoliangpaixu"></span>
         <div class="average-sales-title">过往半年月均销量</div>
         <div class="count">{{infolist.halfyearmonthvalumns}}</div>
       </div>
       <div class="percent">
         <div class="percent-data">
-          <span>2</span>
+          <span class="iconfont icon-baifenhao"></span>
           <div class="percent-title">核心分销完成率</div>
           <div class="count">{{infolist.compelationrate+'%'}}</div>
         </div>
@@ -27,7 +27,7 @@
       </div>
     </div>
     <PublicTextarea :orderinsidetext="insedename"></PublicTextarea>
-    <mt-button class="place-order" type="primary" plain>下单</mt-button>
+    <mt-button class="place-order" type="primary" plain @click="GotoPlaceOrder">下单</mt-button>
     <mt-button class="shop-signed" type="primary">商店签到</mt-button>
   </div>
 </template>
@@ -88,6 +88,15 @@ export default {
         // console.log(this.getBarPercent);
         this.$refs.percentBar.style.width = this.getBarPercent;
       }
+    },
+    GotoPlaceOrder() {
+      console.log(this.id);
+      if (this.id) {
+        this.$router.push('/home/placeorder?id=' + this.id);
+      }
+    },
+    goBack() {
+      this.$router.push('/home');
     }
   },
   computed: {
@@ -121,6 +130,12 @@ $percentDataHeight: px2rem(96);
     font-size: px2rem(25);
   }
   .shop-wrap {
+    span {
+      &:before {
+        font-size: px2rem(30);
+        color: #000;
+      }
+    }
     .shopname {
       padding-left: px2rem(24);
       height: $shopNameHeight;

@@ -15,7 +15,7 @@ import TopHead from '../../components/TopHead';
 import OutsideOderList from '../../components/zzz/OutsideOderList.vue';
 import SearchInput from '../../components/zzz/SearchInput.vue';
 export default {
-  name: "outsideOfOrder",
+  name: 'outsideOfOrder',
   data() {
     return {
       orderlist: [
@@ -30,10 +30,9 @@ export default {
           listDate: '下单日期：1992-02-01',
           listAddress: '超市',
           url: ''
-        },
+        }
       ]
-
-    }
+    };
   },
   components: {
     tophead: TopHead,
@@ -44,12 +43,9 @@ export default {
     RequestSearch(value) {
       //发送ajax请求获取店外订单的列表数据
       console.log(value);
-
-
     }
   }
-
-}
+};
 </script>
 
 

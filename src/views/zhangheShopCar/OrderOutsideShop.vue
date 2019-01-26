@@ -3,7 +3,8 @@
     <div class="topheader">
       <PublicTopHeader :title="orderoutsidetitle"></PublicTopHeader>
     </div>
-    <Search :orderoutsidesearch="shopname"></Search>
+    <Search :srchplaceholder="shopname">
+    </Search>
     <div class="shoplist">
       <ul>
         <li class="shoplist-item" v-for="(item,index) in shopnamelist" :key="index">
@@ -13,7 +14,7 @@
             <p class="order-address">{{item.address}}</p>
           </div>
           <div class="shoplist-item-r" @click="toorderinsideactive(item.id)">
-            <span class="iconfont icon-fenye-xiayiye"></span>
+            <span class="iconfont icon-youjiantou"></span>
           </div>
         </li>
       </ul>
@@ -74,15 +75,17 @@ export default {
         h3 {
           font-weight: normal;
           font-size: px2rem(26);
+          margin-bottom: px2rem(10);
         }
         p {
           font-size: px2rem(24);
           color: #757575;
+          padding: px2rem(10) 0;
         }
       }
       .shoplist-item-r {
         line-height: px2rem(95);
-        .icon-fenye-xiayiye {
+        .icon-youjiantou {
           &:before {
             font-size: px2rem(36);
           }
