@@ -5,7 +5,7 @@
       <div class="top-l">
         <!-- 定义左侧插槽，如果别的组件想引用直接引入即可 -->
         <slot name="top-l">
-          <span @click="goBack" class="iconfont icon-houtui" v-show="flag"></span>
+          <span @click="goBack" class="iconfont icon-zuojiantou" v-show="flag"></span>
         </slot>
       </div>
       <div class="top-c">
@@ -85,7 +85,7 @@ $headColor: linear-gradient(to right, #24be5a, #29db67); //头部渐变色
     }
     .top-l {
       text-align: left;
-      .icon-houtui {
+      .icon-zuojiantou {
         // display: inline-block;
         // height: $height;
         &:before {
@@ -96,6 +96,8 @@ $headColor: linear-gradient(to right, #24be5a, #29db67); //头部渐变色
     }
     .top-c {
       h3 {
+        height: $height;
+        line-height: $height;
         font-size: $btn-head-fontsize;
         font-weight: normal;
       }

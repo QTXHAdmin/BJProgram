@@ -7,6 +7,7 @@ import OutsideOfOrder from './views/zzz/OutsideOfOrder';
 
 import OrderOutsideShop from './views/zhangheShopCar/OrderOutsideShop.vue';
 import OrderInsideActive from './views/zhangheShopCar/OrderInsideActive.vue';
+import PlaceOrder from './views/zhangheShopCar/PlaceOrder.vue';
 
 Vue.use(Router);
 
@@ -36,6 +37,11 @@ export default new Router({
       path: '/home/orderinsideactive',
       name: 'orderinsideactive',
       component: OrderInsideActive
+    },
+    {
+      path: '/home/placeorder',
+      name: 'placeorder',
+      component: PlaceOrder
     },
     {
       path: '/about',

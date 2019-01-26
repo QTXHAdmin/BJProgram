@@ -13,5 +13,13 @@ export default {
   //获取店内活动的数据
   getorderinsideactive(id) {
     return axios.get('http://localhost:3000/orderinsideactive?id=' + id);
+  },
+  //获取下单页面按钮名字
+  getplaceorderbtnname() {
+    return axios.get('http://localhost:3000/btnnametitle');
+  },
+  // 获取下单页面的描述信息
+  getinfo(tab) {
+    return axios.get('http://localhost:3000/' + tab);
   }
 };

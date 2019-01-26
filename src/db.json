@@ -7,55 +7,55 @@
         },
         {
             "id": 2,
-            "name": "文悦超市2",
+            "name": "嘻哈门店",
             "order_time": "2015-04-16T03:50:28.000Z",
             "address": "乌鲁木齐大西桥超市"
         },
         {
             "id": 3,
-            "name": "文悦超市3",
+            "name": "以纯",
             "order_time": "2015-04-16T03:50:28.000Z",
             "address": "乌鲁木齐大西桥超市"
         },
         {
             "id": 4,
-            "name": "文悦超市4",
+            "name": "美特斯邦威",
             "order_time": "2015-04-16T03:50:28.000Z",
             "address": "乌鲁木齐大西桥超市"
         },
         {
             "id": 5,
-            "name": "文悦超市5",
+            "name": "阿迪",
             "order_time": "2015-04-16T03:50:28.000Z",
             "address": "乌鲁木齐大西桥超市"
         },
         {
             "id": 6,
-            "name": "文悦超市6",
+            "name": "耐克",
             "order_time": "2015-04-16T03:50:28.000Z",
             "address": "乌鲁木齐大西桥超市"
         },
         {
             "id": 7,
-            "name": "文悦超市7",
+            "name": "哇哈哈",
             "order_time": "2015-04-16T03:50:28.000Z",
             "address": "乌鲁木齐大西桥超市"
         },
         {
             "id": 8,
-            "name": "文悦超市8",
+            "name": "百事",
             "order_time": "2015-04-16T03:50:28.000Z",
             "address": "乌鲁木齐大西桥超市"
         },
         {
             "id": 9,
-            "name": "文悦超市9",
+            "name": "帕斯顿",
             "order_time": "2015-04-16T03:50:28.000Z",
             "address": "乌鲁木齐大西桥超市"
         },
         {
             "id": 10,
-            "name": "文悦超市10",
+            "name": "天堂",
             "order_time": "2015-04-16T03:50:28.000Z",
             "address": "乌鲁木齐大西桥超市"
         }
@@ -71,63 +71,437 @@
     "orderinsideactive": [{
         "id": 1,
         "title": "文悦超市1",
-        "monthsalesvalumns": 23198,
-        "halfyearmonthvalumns": 56660,
+        "monthsalesvalumns": 11425,
+        "halfyearmonthvalumns": 44569,
         "compelationrate": 50
     }, {
         "id": 2,
-        "title": "文悦超市1",
-        "monthsalesvalumns": 23198,
-        "halfyearmonthvalumns": 56660,
-        "compelationrate": 20
+        "title": "文悦超市2",
+        "monthsalesvalumns": 357,
+        "halfyearmonthvalumns": 753,
+        "compelationrate": 30
     }, {
         "id": 3,
-        "title": "文悦超市1",
-        "monthsalesvalumns": 23198,
-        "halfyearmonthvalumns": 56660,
-        "compelationrate": 20
+        "title": "文悦超市3",
+        "monthsalesvalumns": 264,
+        "halfyearmonthvalumns": 487,
+        "compelationrate": 90
     }, {
         "id": 4,
-        "title": "文悦超市1",
-        "monthsalesvalumns": 23198,
-        "halfyearmonthvalumns": 56660,
-        "compelationrate": 20
+        "title": "文悦超市4",
+        "monthsalesvalumns": 258,
+        "halfyearmonthvalumns": 758,
+        "compelationrate": 15
     }, {
         "id": 5,
-        "title": "文悦超市1",
-        "monthsalesvalumns": 23198,
-        "halfyearmonthvalumns": 56660,
-        "compelationrate": 20
+        "title": "文悦超市5",
+        "monthsalesvalumns": 12,
+        "halfyearmonthvalumns": 963,
+        "compelationrate": 43
     }, {
         "id": 6,
-        "title": "文悦超市1",
-        "monthsalesvalumns": 23198,
-        "halfyearmonthvalumns": 56660,
-        "compelationrate": 20
+        "title": "文悦超市6",
+        "monthsalesvalumns": 741,
+        "halfyearmonthvalumns": 564,
+        "compelationrate": 36
     }, {
         "id": 7,
-        "title": "文悦超市1",
-        "monthsalesvalumns": 23198,
-        "halfyearmonthvalumns": 56660,
-        "compelationrate": 20
+        "title": "文悦超市7",
+        "monthsalesvalumns": 110,
+        "halfyearmonthvalumns": 785,
+        "compelationrate": 49
     }, {
         "id": 8,
-        "title": "文悦超市1",
-        "monthsalesvalumns": 23198,
-        "halfyearmonthvalumns": 56660,
-        "compelationrate": 20
+        "title": "文悦超市8",
+        "monthsalesvalumns": 45,
+        "halfyearmonthvalumns": 198,
+        "compelationrate": 78
     }, {
         "id": 9,
-        "title": "文悦超市1",
-        "monthsalesvalumns": 23198,
-        "halfyearmonthvalumns": 56660,
+        "title": "文悦超市9",
+        "monthsalesvalumns": 112,
+        "halfyearmonthvalumns": 596,
         "compelationrate": 20
     }, {
         "id": 10,
-        "title": "文悦超市1",
+        "title": "文悦超市10",
         "monthsalesvalumns": 23198,
         "halfyearmonthvalumns": 56660,
         "compelationrate": 20
-    }]
+    }],
+    "btnnametitle": [{ "name": "促销", "tab": "cuxiao" }, { "name": "全部", "tab": "quanbu" }, { "name": "PSKU-N", "tab": "PSKUN" }, { "name": "PSKU-Y", "tab": "PSKUY" }, { "name": "PSKU-M", "tab": "PSKUM" }, { "name": "PSKU-Q", "tab": "PSKUQ" }, { "name": "PSKU", "tab": "PSKU" }],
+    "cuxiao": {
+        "msg": {
+            "id": 1,
+            "topNum": 1670,
+            "topTotalNum": 3590,
+            "topdes1": "洗护",
+            "topdes2": "食品",
+            "topdes3": "宝洁"
+        },
+        "infolist": [{
+            "id": 1,
+            "img_src": "/img/5.jpg",
+            "info_title": "奥特曼",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 1200
+        }, {
+            "id": 2,
+            "img_src": "/img/4.jpg",
+            "info_title": "浩海",
+            "codeing": 59012380,
+            "standardNum": 23,
+            "price": 278.00,
+            "stock": 700
+        }, {
+            "id": 3,
+            "img_src": "/img/3.jpg",
+            "info_title": "兰博基尼",
+            "codeing": 89001365,
+            "standardNum": 20,
+            "price": 12.00,
+            "stock": 200
+        }, {
+            "id": 4,
+            "img_src": "/img/2.jpg",
+            "info_title": "化妆品",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 789
+        }, {
+            "id": 5,
+            "img_src": "/img/1.jpg",
+            "info_title": "玩具车",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 963
+        }, {
+            "id": 3,
+            "img_src": "/img/3.jpg",
+            "info_title": "兰博基尼",
+            "codeing": 89001365,
+            "standardNum": 20,
+            "price": 12.00,
+            "stock": 200
+        }, {
+            "id": 4,
+            "img_src": "/img/2.jpg",
+            "info_title": "化妆品",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 789
+        }, {
+            "id": 5,
+            "img_src": "/img/1.jpg",
+            "info_title": "玩具车",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 963
+        }]
+    },
+    "quanbu": {
+        "msg": {
+            "id": 2,
+            "topNum": 10,
+            "topTotalNum": 11169,
+            "topdes1": "洗脚",
+            "topdes2": "食品",
+            "topdes3": "宝洁"
+        },
+        "infolist": [{
+            "id": 1,
+            "img_src": "/img/1.jpg",
+            "info_title": "玩具车",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 1200
+        }, {
+            "id": 2,
+            "img_src": "/img/2.jpg",
+            "info_title": "化妆品",
+            "codeing": 59012380,
+            "standardNum": 23,
+            "price": 278.00,
+            "stock": 700
+        }, {
+            "id": 3,
+            "img_src": "/img/3.jpg",
+            "info_title": "兰博基尼",
+            "codeing": 89001365,
+            "standardNum": 20,
+            "price": 12.00,
+            "stock": 200
+        }, {
+            "id": 4,
+            "img_src": "/img/4.jpg",
+            "info_title": "浩海",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 789
+        }, {
+            "id": 5,
+            "img_src": "/img/5.jpg",
+            "info_title": "奥特曼",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 963
+        }, {
+            "id": 6,
+            "img_src": "/img/6.jpg",
+            "info_title": "玩毛阿",
+            "codeing": 75652313,
+            "standardNum": 15,
+            "price": 95.00,
+            "stock": 741
+        }, {
+            "id": 7,
+            "img_src": "/img/7.jpg",
+            "info_title": "没毛用",
+            "codeing": 78422014,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 1025
+        }, {
+            "id": 8,
+            "img_src": "/img/8.jpg",
+            "info_title": "咋搞",
+            "codeing": 2587659,
+            "standardNum": 19,
+            "price": 78.00,
+            "stock": 1025
+        }, {
+            "id": 9,
+            "img_src": "/img/9.jpg",
+            "info_title": "卡住了",
+            "codeing": 2587659,
+            "standardNum": 19,
+            "price": 78.00,
+            "stock": 1025
+        }, {
+            "id": 10,
+            "img_src": "/img/10.jpg",
+            "info_title": "shit",
+            "codeing": 2587659,
+            "standardNum": 19,
+            "price": 78.00,
+            "stock": 1025
+        }, {
+            "id": 8,
+            "img_src": "/img/8.jpg",
+            "info_title": "咋搞",
+            "codeing": 2587659,
+            "standardNum": 19,
+            "price": 78.00,
+            "stock": 1025
+        }, {
+            "id": 9,
+            "img_src": "/img/9.jpg",
+            "info_title": "卡住了",
+            "codeing": 2587659,
+            "standardNum": 19,
+            "price": 78.00,
+            "stock": 1025
+        }, {
+            "id": 10,
+            "img_src": "/img/10.jpg",
+            "info_title": "shit",
+            "codeing": 2587659,
+            "standardNum": 19,
+            "price": 78.00,
+            "stock": 1025
+        }]
+    },
+    "PSKUN": {
+        "msg": {
+            "id": 3,
+            "topNum": 785,
+            "topTotalNum": 900,
+            "topdes1": "端盘子",
+            "topdes2": "食品",
+            "topdes3": "宝洁"
+        },
+        "infolist": [{
+            "id": 1,
+            "img_src": "/img/1.jpg",
+            "info_title": "shit",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 1200
+        }, {
+            "id": 2,
+            "img_src": "/img/2.jpg",
+            "info_title": "卡住了",
+            "codeing": 59012380,
+            "standardNum": 23,
+            "price": 278.00,
+            "stock": 700
+        }, {
+            "id": 1,
+            "img_src": "/img/3.jpg",
+            "info_title": "咋搞",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 1200
+        }, {
+            "id": 2,
+            "img_src": "/img/4.jpg",
+            "info_title": "没毛用",
+            "codeing": 59012380,
+            "standardNum": 23,
+            "price": 278.00,
+            "stock": 700
+        }]
+    },
+    "PSKUY": {
+        "msg": {
+            "id": 4,
+            "topNum": 1670,
+            "topTotalNum": 3590,
+            "topdes1": "扫地",
+            "topdes2": "食品",
+            "topdes3": "宝洁"
+        },
+        "infolist": [{
+            "id": 1,
+            "img_src": "/img/3.jpg",
+            "info_title": "咋搞",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 1200
+        }, {
+            "id": 2,
+            "img_src": "/img/4.jpg",
+            "info_title": "没毛用",
+            "codeing": 59012380,
+            "standardNum": 23,
+            "price": 278.00,
+            "stock": 700
+        }, {
+            "id": 3,
+            "img_src": "/img/6.jpg",
+            "info_title": "奥特曼",
+            "codeing": 59012380,
+            "standardNum": 23,
+            "price": 278.00,
+            "stock": 700
+        }, {
+            "id": 2,
+            "img_src": "/img/8.jpg",
+            "info_title": "兰博基尼",
+            "codeing": 59012380,
+            "standardNum": 23,
+            "price": 278.00,
+            "stock": 700
+        }, {
+            "id": 3,
+            "img_src": "/img/10.jpg",
+            "info_title": "玩具车",
+            "codeing": 59012380,
+            "standardNum": 23,
+            "price": 278.00,
+            "stock": 700
+        }, {
+            "id": 2,
+            "img_src": "/img/8.jpg",
+            "info_title": "兰博基尼",
+            "codeing": 59012380,
+            "standardNum": 23,
+            "price": 278.00,
+            "stock": 700
+        }, {
+            "id": 3,
+            "img_src": "/img/10.jpg",
+            "info_title": "玩具车",
+            "codeing": 59012380,
+            "standardNum": 23,
+            "price": 278.00,
+            "stock": 700
+        }]
+    },
+    "PSKUM": {
+        "msg": {
+            "id": 5,
+            "topNum": 1670,
+            "topTotalNum": 3590,
+            "topdes1": "玩游戏",
+            "topdes2": "食品",
+            "topdes3": "宝洁"
+        },
+        "infolist": [{
+            "id": 1,
+            "img_src": "/img/5.jpg",
+            "info_title": "玩毛阿",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 1200
+        }]
+    },
+    "PSKUQ": {
+        "msg": {
+            "id": 6,
+            "topNum": 795,
+            "topTotalNum": 157,
+            "topdes1": "搞笑",
+            "topdes2": "食品",
+            "topdes3": "宝洁"
+        },
+        "infolist": [{
+            "id": 1,
+            "img_src": "/img/7.jpg",
+            "info_title": "浩海",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 1200
+        }, {
+            "id": 2,
+            "img_src": "/img/8.jpg",
+            "info_title": "兰博基尼",
+            "codeing": 59012380,
+            "standardNum": 23,
+            "price": 278.00,
+            "stock": 700
+        }, {
+            "id": 3,
+            "img_src": "/img/10.jpg",
+            "info_title": "玩具车",
+            "codeing": 59012380,
+            "standardNum": 23,
+            "price": 278.00,
+            "stock": 700
+        }]
+    },
+    "PSKU": {
+        "msg": {
+            "id": 7,
+            "topNum": 2,
+            "topTotalNum": 3590,
+            "topdes1": "呵呵",
+            "topdes2": "食品",
+            "topdes3": "宝洁"
+        },
+        "infolist": [{
+            "id": 1,
+            "img_src": "/img/9.jpg",
+            "info_title": "化妆品",
+            "codeing": 59012380,
+            "standardNum": 12,
+            "price": 78.00,
+            "stock": 1200
+        }]
+    }
 
 }
