@@ -26,6 +26,7 @@
 <script>
 import PublicTopHeader from '../../components/PublicTopHeader';
 import MarketChaininfo from '../../components/zhangheShopCarcomponent/MarketChaininfo';
+
 export default {
   name: 'submitorder',
   data() {
