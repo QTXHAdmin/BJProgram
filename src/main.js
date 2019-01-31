@@ -11,6 +11,8 @@ import './assets/common.css';
 import MintUI from 'mint-ui';
 import 'mint-ui/lib/style.css';
 import '../src/assets/zhfont/iconfont.css'; //font字体图标样式
+import '../src/assets/font/iconfont.css'; //font字体图标样式
+
 // import './lib/mui/css/mui.min.css';
 import './lib/mui/css/icons-extra.css';
 // import Mock from "mockjs";
