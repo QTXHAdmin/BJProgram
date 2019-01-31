@@ -36,7 +36,9 @@ export default {
   getProductMsg(id) {
     return axios.get('http://localhost:3000/quanbu?id=' + id);
   },
-  getProductList() {
+  getProductList() {},
+  //获取产品选择页面的信息
+  getproductinfo() {
     return axios.get('http://localhost:3000/quanbu');
   }
 };

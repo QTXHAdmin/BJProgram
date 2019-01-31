@@ -27,7 +27,7 @@
       <!-- 列表区域 -->
       <div class="order-list">
         <ul>
-          <li  v-for="(item,index) of listinfo" :key="index">
+          <router-link  v-for="(item,index) of listinfo" :key="index" :to="'/home/productselection?id='+item.id" tag="li">
             <div class="order-list-img">
               <!-- 图片懒加载 -->
               <img v-lazy="item.img_src">
@@ -45,7 +45,7 @@
                 <span class="iconfont icon-shuaxin"></span>
               </p>
             </div>
-          </li>
+          </router-link>
         </ul>
       </div>
   </div>  
@@ -55,8 +55,8 @@ import PublicTopHeader from '../../components/PublicTopHeader';
 import Search from '../../components/zhangheShopCarcomponent/Search';
 import service from '../../service/service.js';
 // import { Toast } from 'mint-ui';
-import mui from '../../lib/mui/js/mui.min.js';
-import '../../lib/mui/css/mui.min.css';
+import mui from '../../lib/zh/mui/js/mui.min.js';
+import '../../lib/zh/mui/css/mui.min.css';
 export default {
   name: 'placeorder',
   data() {
@@ -83,7 +83,7 @@ export default {
     getPlaceOrder() {
       service.getplaceorderbtnname().then(res => {
         this.btnname = res.data;
-        console.log(this.btnname);
+        // console.log(this.btnname);
       });
     },
     getInFo(tab) {
@@ -91,9 +91,9 @@ export default {
         service.getinfo(tab).then(res => {
           this.listdes = res.data.msg;
           this.listinfo = res.data.infolist;
-          console.log(tab);
-          console.log(this.listdes);
-          console.log(this.listinfo);
+          // console.log(tab);
+          // console.log(this.listdes);
+          // console.log(this.listinfo);
         });
       }
     }
