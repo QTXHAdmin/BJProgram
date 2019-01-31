@@ -8,7 +8,9 @@ export default new Vuex.Store({
     LoginUser: sessionStorage.getItem('LoginUser')
       ? JSON.parse(sessionStorage.getItem('LoginUser'))
       : null,
-    shoppingCart: []
+    shoppingCart: [],
+    // num: 1, //计数组件绑定的值-zh
+    carlist: [] //定义数组接收购买商品的对象数据-zh
   },
   mutations: {
     initUser(state, payload) {
@@ -30,6 +32,38 @@ export default new Vuex.Store({
       if (!onOff) {
         state.shoppingCart.push(payload);
       }
+    },
+    //增加的方法-zh
+    // increase(state, maxNum) {
+    //   if (state.num >= maxNum) {
+    //     return (state.num = maxNum);
+    //   }
+    //   state.num++;
+    // },
+    // 减少的方法-zh
+    // decrease(state, minNum) {
+    //   if (state.num <= minNum) {
+    //     return state.num == minNum;
+    //   }
+    //   state.num--;
+    // },
+    //点击购物车按钮把选择到的商品数据添加到state中的carlist中-zh
+    addToCar(state, productinfo) {
+      let flag = false; //设置个flag假设carlist中没有这个商品
+      state.carlist.some(item => {
+        if (item.id == productinfo.id) {
+          //判断id如果存在说明carlist中已经有了这个商品。那么只需要加数量就行了
+          item.selectcount += parseInt(productinfo.selectcount);
+          flag = true; //为true就代表商品已经存在
+          return true;
+        }
+      });
+      if (!flag) {
+        //如果循环到最后flag还是false，说明没有添加过这个商品，那么就把商品数据push到carlist中
+        state.carlist.push(productinfo);
+      }
+      // 把添加过的商品数据存放到localstorage中，本地存储
+      localStorage.setItem('carlist', JSON.stringify(state.carlist));
     }
   },
   actions: {},
@@ -39,6 +73,21 @@ export default new Vuex.Store({
     },
     getShoppingCart(state) {
       return state.shoppingCart;
+    },
+    getcarlist(state) {
+      return state.carlist;
     }
+    // getcount(state) {
+    // return state.carlist;
+    // let obj = {
+    //   count: 0,
+    //   amount: 0
+    // };
+    // state.carlist.forEach(item => {
+    //   obj.count += item.selectcount;
+    //   obj.amount += item.price * item.selectcount;
+    // });
+    // return obj;
+    // }
   }
 });

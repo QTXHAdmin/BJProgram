@@ -1,5 +1,5 @@
 <template>
-  <!-- 页面头部共用组件 -->
+  <!-- 页面头部共用组件-zh -->
   <div id="app" class="topheader-container">
     <div class="top-main">
       <div class="top-l">
@@ -62,6 +62,9 @@ export default {
 $height: px2rem(100);
 $headColor: linear-gradient(to right, #24be5a, #29db67); //头部渐变色
 .topheader-container {
+  // position: fixed;
+  // width: 100%;
+  // top: 0;
   //查看控制台里面已经有了border-box!!!
   height: px2rem(152);
   padding-top: px2rem(50); // 留出手机顶部50px的距离

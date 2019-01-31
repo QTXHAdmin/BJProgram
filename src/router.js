@@ -18,6 +18,10 @@ import ProductOption from './views/zzz/ProductOption';
 import ShoppingCar from './views/zzz/shoppingCart';
 import SubmitOrder from './views/zzz/SubmitOrder';
 
+import ProductSelection from './views/zhangheShopCar/ProductSelection.vue';
+// import SupermarketChain from './views/zhangheShopCar/SupermarketChain.vue';
+import SupermarketChain2 from './views/zhangheShopCar/SupermarketChain2.vue';
+// import SubmitOrder from './views/zhangheShopCar/SubmitOrder.vue';
 Vue.use(Router);
 
 export default new Router({
@@ -76,6 +80,35 @@ export default new Router({
       path: '/home/submitorder',
       name: 'SubmitOrder',
       component: SubmitOrder
+    },
+    {
+      path: '/home/productselection',
+      name: 'productselection',
+      component: ProductSelection
+    },
+    // {
+    //   path: '/home/supermarketchain',
+    //   name: 'supermarketchain',
+    //   component: SupermarketChain
+    // },
+    {
+      path: '/home/supermarketchain2',
+      name: 'supermarketchain2',
+      component: SupermarketChain2
+    },
+    {
+      path: '/home/submitorder',
+      name: 'submitorder',
+      component: SubmitOrder
     }
+    // {
+    //   path: '/about',
+    //   name: 'about',
+    //   // route level code-splitting
+    //   // this generates a separate chunk (about.[hash].js) for this route
+    //   // which is lazy-loaded when the route is visited.
+    //   component: () =>
+    //     import(/* webpackChunkName: "about" */ './views/About.vue')
+    // }
   ]
 });

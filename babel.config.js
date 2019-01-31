@@ -12,5 +12,5 @@ module.exports = {
     ],
     'transform-remove-strict-mode'
   ],
-  ignore: ['./src/lib/mui/js/*.js']
+  ignore: ['./src/lib/zh/mui/js/*.js', './src/lib/zz/mui/js/*.js']
 };
