@@ -10,6 +10,7 @@ export default {
   getCode(code) {
     return axios.get('http://localhost:3000/code', code);
   },
+
   //获取店内活动的数据
   getorderinsideactive(id) {
     return axios.get('http://localhost:3000/orderinsideactive?id=' + id);
@@ -21,5 +22,21 @@ export default {
   // 获取下单页面的描述信息
   getinfo(tab) {
     return axios.get('http://localhost:3000/' + tab);
+  },
+
+  getShopMeg(id) {
+    return axios.get('http://localhost:3000/orderinsideactive?id=' + id);
+  },
+  getTab() {
+    return axios.get('http://localhost:3000/btnnametitle');
+  },
+  getProduct(name) {
+    return axios.get('http://localhost:3000/' + name);
+  },
+  getProductMsg(id) {
+    return axios.get('http://localhost:3000/quanbu?id=' + id);
+  },
+  getProductList() {
+    return axios.get('http://localhost:3000/quanbu');
   }
 };

@@ -36,6 +36,7 @@
         "lint-staged": "^8.1.0",
         "node-sass": "^4.9.0",
         "sass-loader": "^7.0.1",
+        "vsvg": "^1.9.1",
         "vue-template-compiler": "^2.5.21"
     },
     "gitHooks": {

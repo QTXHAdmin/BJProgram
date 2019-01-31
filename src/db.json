@@ -129,7 +129,28 @@
         "halfyearmonthvalumns": 56660,
         "compelationrate": 20
     }],
-    "btnnametitle": [{ "name": "促销", "tab": "cuxiao" }, { "name": "全部", "tab": "quanbu" }, { "name": "PSKU-N", "tab": "PSKUN" }, { "name": "PSKU-Y", "tab": "PSKUY" }, { "name": "PSKU-M", "tab": "PSKUM" }, { "name": "PSKU-Q", "tab": "PSKUQ" }, { "name": "PSKU", "tab": "PSKU" }],
+    "btnnametitle": [{
+        "name": "促销",
+        "tab": "cuxiao"
+    }, {
+        "name": "全部",
+        "tab": "quanbu"
+    }, {
+        "name": "PSKU-N",
+        "tab": "PSKUN"
+    }, {
+        "name": "PSKU-Y",
+        "tab": "PSKUY"
+    }, {
+        "name": "PSKU-M",
+        "tab": "PSKUM"
+    }, {
+        "name": "PSKU-Q",
+        "tab": "PSKUQ"
+    }, {
+        "name": "PSKU",
+        "tab": "PSKU"
+    }],
     "cuxiao": {
         "msg": {
             "id": 1,

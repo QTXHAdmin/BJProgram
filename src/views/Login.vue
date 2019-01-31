@@ -75,6 +75,7 @@ export default {
       this.rememb || (this.autologin = false);
     },
     LoginBtnClick() {
+      console.log('执行登录');
       //判断当前是否校验全部通过,以及判断验证码是否正确，需要向后台发送请求，后台需要返回校验结果
       if (this.errors.any()) {
         return;
@@ -124,6 +125,7 @@ export default {
                   sessionStorage.setItem('LoginToken', res.data.token);
                   //把当前登录的用户信息放到vueX
                   this.$store.commit('initUser', res.data.user);
+                  Indicator.close();
                   //跳转到home页面
                   Indicator.close();
                   this.$router.push('/home');

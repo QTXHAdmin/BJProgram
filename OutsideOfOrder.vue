@@ -45,7 +45,7 @@ export default {
     this.ShowShop();
   },
   methods: {
-    RequestSearch() {
+    RequestSearch(value) {
       //发送ajax请求获取店外订单的列表数据
       // console.log(value);
     },

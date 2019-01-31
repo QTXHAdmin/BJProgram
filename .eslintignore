@@ -1,5 +1,10 @@
 /node_modules/
 #*.js
 *.html
+<<<<<<< HEAD
 #*
 /src/lib/*
+=======
+/src/lib/
+#*
+>>>>>>> update shoppingCartAnd More Papers -- zhengzheng 2019-1-31
