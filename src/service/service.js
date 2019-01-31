@@ -26,5 +26,17 @@ export default {
 
   getShopMeg(id) {
     return axios.get('http://localhost:3000/orderinsideactive?id=' + id);
+  },
+  getTab() {
+    return axios.get('http://localhost:3000/btnnametitle');
+  },
+  getProduct(name) {
+    return axios.get('http://localhost:3000/' + name);
+  },
+  getProductMsg(id) {
+    return axios.get('http://localhost:3000/quanbu?id=' + id);
+  },
+  getProductList() {
+    return axios.get('http://localhost:3000/quanbu');
   }
 };

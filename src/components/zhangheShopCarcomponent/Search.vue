@@ -3,9 +3,10 @@
     <span class="iconfont  icon-icon-"></span>
     <input type="text" class="search-text" :placeholder="srchplaceholder">
     <slot name="search-r">
-      
+
     </slot>
   </div>
+
 </template>
 <script>
 export default {

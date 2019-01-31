@@ -13,6 +13,10 @@ import InStoreActivity from './views/zzz/InStoreActivity';
 
 // import OrderOutsideShop from './views/zhangheShopCar/OrderOutsideShop.vue';
 // import OrderInsideActive from './views/zhangheShopCar/OrderInsideActive.vue';
+import Order from './views/zzz/Order';
+import ProductOption from './views/zzz/ProductOption';
+import ShoppingCar from './views/zzz/shoppingCart';
+import SubmitOrder from './views/zzz/SubmitOrder';
 
 Vue.use(Router);
 
@@ -54,13 +58,24 @@ export default new Router({
       component: InStoreActivity
     },
     {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () =>
-        import(/* webpackChunkName: "about" */ './views/About.vue')
+      path: '/home/productoption',
+      name: 'ProductOption',
+      component: ProductOption
+    },
+    {
+      path: '/home/order',
+      name: 'Order',
+      component: Order
+    },
+    {
+      path: '/home/shoppingcar',
+      name: 'ShoppingCar',
+      component: ShoppingCar
+    },
+    {
+      path: '/home/submitorder',
+      name: 'SubmitOrder',
+      component: SubmitOrder
     }
   ]
 });

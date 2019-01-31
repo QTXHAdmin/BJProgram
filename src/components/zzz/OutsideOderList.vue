@@ -21,8 +21,8 @@ export default {
   },
   // '/home/instoreactivity?id=' + url
   methods: {
-    GetToOrderPage(url) {
-      this.$router.push('/home/instoreactivity?id=' + url);
+    GetToOrderPage(id) {
+      this.$router.push('/home/instoreactivity?id=' + id);
     }
   }
 };

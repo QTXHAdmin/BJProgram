@@ -1,7 +1,7 @@
 <template>
   <div class="outsideOfOrder">
     <tophead title="店外订单"></tophead>
-    <searchinput @SearchOutSideOrder="RequestSearch"></searchinput>
+    <searchinput value="点击进行搜索" @SearchOutSideOrder="RequestSearch"></searchinput>
     <div class="orderlist" v-for="(order,index) in  orderlist" :key="index">
       <outsidelist :title="order.name" :date="order.order_time | dateFormat" :address="order.address" :url="order.id"></outsidelist>
     </div>
@@ -45,10 +45,10 @@ export default {
     this.ShowShop();
   },
   methods: {
-    // RequestSearch(value) {
-    //   //发送ajax请求获取店外订单的列表数据
-    //   // console.log(value);
-    // },
+    RequestSearch() {
+      //发送ajax请求获取店外订单的列表数据
+      // console.log(value);
+    },
     ShowShop() {
       service
         .getshopinfo()
