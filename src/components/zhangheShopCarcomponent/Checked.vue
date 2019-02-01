@@ -1,14 +1,35 @@
 <template>
     <div class="checked">
        <div class="check">
-         <span class="checkBox-inner"></span>
+         <span class="checkBox-inner" :class="{'active':flag}" @click="ToggleBtn" :v-model="flag"></span>
        </div>
     </div>
 </template>
 <script>
 //多选单选按钮组件
 export default {
-  name: 'checked'
+  name: 'checked',
+  data() {
+    return {
+      // flag: false
+      flag: this.$store.getters.getSelectShop.selected
+    };
+  },
+  props: ['getid', 'ItemId'],
+  created() {
+    // this.$emit('getFlag', this.flag);
+    // this.ToggleBtn();
+  },
+  methods: {
+    ToggleBtn() {
+      let obj = {
+        flag: this.flag,
+        getids: this.ItemId
+      };
+      this.$emit('getFlag', obj);
+      this.flag = !this.flag;
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -25,7 +46,10 @@ export default {
     height: px2rem(16);
     width: px2rem(16);
     display: inline-block;
-    background: #00a2eb;
+    background: #fff;
+  }
+  .active {
+    background-color: #00a2eb;
   }
 }
 </style>

@@ -55,7 +55,7 @@ export default {
     return {
       producttitle: '产品选择',
       id: this.$route.query.id,
-      productinfo: [],
+      productinfo: {},
       stockc: 0,
       num: 0
       // selectcount: 1
@@ -90,8 +90,11 @@ export default {
       //   id: this.id - 1,
       //   count: this.selectedCount,
       //   price: this.productinfo.price
-      // };
+      // };\
+      this.productinfo.selected = true;
       this.$store.commit('addToCar', this.productinfo);
+      localStorage.setItem('shopcaritem', JSON.stringify(this.productinfo));
+      // console.log(this.productinfo)
       this.$router.push('/home/supermarketchain2');
     }
   },
