@@ -10,7 +10,8 @@ export default new Vuex.Store({
       : null,
     shoppingCart: [],
     // num: 1, //计数组件绑定的值-zh
-    carlist: [] //定义数组接收购买商品的对象数据-zh
+    carlist: [], //定义数组接收购买商品的对象数据-zh
+    selectshoplist: []
   },
   mutations: {
     initUser(state, payload) {
@@ -63,7 +64,27 @@ export default new Vuex.Store({
         state.carlist.push(productinfo);
       }
       // 把添加过的商品数据存放到localstorage中，本地存储
-      localStorage.setItem('carlist', JSON.stringify(state.carlist));
+      // localStorage.setItem('carlist', JSON.stringify(state.carlist));
+    },
+    getselectshoplist(state, selectshopitem) {
+      console.log(1);
+      let onOff = false;
+      if (selectshopitem.selected == true) {
+        if (state.selectshoplist.length > 0) {
+          state.selectshoplist.forEach(item => {
+            if (selectshopitem.id != item.id) {
+              onOff = true;
+            } else {
+              onOff = false;
+            }
+          });
+        } else {
+          state.selectshoplist.push(selectshopitem);
+        }
+        if (onOff) {
+          state.selectshoplist.push(selectshopitem);
+        }
+      }
     }
   },
   actions: {},
@@ -76,7 +97,25 @@ export default new Vuex.Store({
     },
     getcarlist(state) {
       return state.carlist;
+    },
+    getSelectShop(state) {
+      let obj = {};
+      state.carlist.forEach(item => {
+        obj.id = item.id;
+        obj.selected = item.selected;
+      });
+      return obj;
     }
+    //obj={id:2,selected:true}
+    // getamount(state) {
+    //   let obj = {
+    //     amount: 0
+    //   };
+    //   state.carlist.forEach(item => {
+    //     obj.amount = item.price * item.selectcount;
+    //   });
+    //   return obj;
+    // }
     // getcount(state) {
     // return state.carlist;
     // let obj = {

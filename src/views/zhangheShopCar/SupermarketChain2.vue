@@ -5,14 +5,14 @@
     </PublicTopHeader>
     <MarketChain></MarketChain>
     <MarketChaininfo v-for="(item,index) in Supermarketlist" :key="index" :title="item.info_title" :totalprice="item.amount" :src="item.img_src">
-      <Checked slot="Marketinfo-l" class="checke"></Checked>
-      <Number slot='Marketinfo-r' class="count"  :count="item.selectcount"></Number>
+      <Checked slot="Marketinfo-l" class="checke" @getFlag="getflag" :ItemId="item.id" ></Checked>
+      <Number @changenum="changenum" slot='Marketinfo-r' class="count"  :count="item.selectcount"  :changeid="item.id"></Number>
     </MarketChaininfo>
       <div class="info-foot">
          <div class="checkBox">
             <span class="checkBox-inner"></span>
          </div>
-        <span>合计：<span class="info-price">138900.15</span>元</span>
+        <span>合计：<span class="info-price">{{totalAmount}}</span>元</span>
         <button class="confirm" @click="gotoSubmit">确认</button>
       </div>
     </div>  
@@ -28,18 +28,85 @@ export default {
   data() {
     return {
       markettitle: '保定惠友超市连锁',
-      Supermarketlist: []
+      Supermarketlist: [],
+      totalAmount: 0,
+      gtflag: true
     };
   },
   created() {
+    //获取vuex中加入到购物车的商品数据
     this.Supermarketlist = this.$store.getters.getcarlist;
+    // this.Supermarketlist = localStorage.getItem('carlist');
+    // this.flAG();
+
+    this.getamount();
+    this.getTotalamount();
+    // console.log(this.Supermarketlist);
+  },
+  mounted() {
+    let shopobj = JSON.parse(localStorage.getItem('shopcaritem'));
+    console.log(shopobj);
+    this.$store.commit('getselectshoplist', shopobj);
   },
   methods: {
+    // flAG() {
+
+    // },
+    // addselectitem() {
+
+    //   // console.log(this.Supermarketlist);
+    // },
     gotoSubmit() {
       this.$router.push('/home/submitorder');
+    },
+    //为每个对象添加一个总价的方法
+    getamount() {
+      console.log(111);
+      this.Supermarketlist.forEach(item => {
+        item.amount = item.price * item.selectcount;
+      });
+      console.log(this.Supermarketlist);
+    },
+    // 计算合计的价格
+    getTotalamount() {
+      let totalamount = 0;
+      this.Supermarketlist.forEach(item => {
+        totalamount += item.amount;
+      });
+      this.totalAmount = totalamount;
+    },
+    //点击子组件的加减方法触发changenum
+    changenum(obj) {
+      this.Supermarketlist.forEach(item => {
+        if (item.id == obj.id) {
+          //点击的那个商品数据id和从vuex中的商品id如果相同，就执行赋值操作
+          item.selectcount = obj.num;
+        }
+      });
+      console.log(this.Supermarketlist);
+      this.getamount(); //此时再重新计算总价格
+
+      this.getTotalamount();
+    },
+    getflag(obj) {
+      this.gtflag = obj.flag;
+
+      this.Supermarketlist.forEach(item => {
+        if (item.id == obj.getids) {
+          item.selected = !obj.flag;
+        }
+      });
     }
   },
-  mounted() {},
+  // mounted() {},
+  // watch: {
+  //   gtflag: function(oldVal) {
+  //     if (this.gtflag == oldVal) {
+  //       this.$store.commit('');
+  //     } else {
+  //     }
+  //   }
+  // },
   components: {
     PublicTopHeader,
     Checked,
